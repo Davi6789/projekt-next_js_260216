@@ -50,13 +50,16 @@ export default function Header() {
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-6 text-sm">
             <Link href="/" className={linkClass("/")}>
-              🏠Home
+              🏠
             </Link>
             <Link href="/about" className={linkClass("/about")}>
               Über
             </Link>
-            <Link href="/tasks" className={linkClass("/tasks")}>
-              Tasks
+            <Link href="/shop" className={linkClass("/shop")}>
+              Shop
+            </Link>
+            <Link href="/contact" className={linkClass("/contact")}>
+              Kontakt
             </Link>
 
             {/* Dark Mode Toggle */}
@@ -105,6 +108,8 @@ export default function Header() {
             >
               Tasks
             </Link>
+            <a href="/shop" className="text-sm hover:text-emerald-400">Shop</a>
+
 
             <button
               onClick={() =>
