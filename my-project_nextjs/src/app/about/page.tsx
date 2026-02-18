@@ -2,7 +2,7 @@
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
+    <main className="min-h-screenbg-whitebg-white text-slate-900 dark:bg-slate-950 dark:text-slate-50">
       <div className="mx-auto max-w-4xl px-6 py-12">
         <h1 className="text-4xl font-bold mb-6">Über dieses Projekt</h1>
 
