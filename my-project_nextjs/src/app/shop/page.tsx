@@ -12,7 +12,7 @@ export default function ShopPage() {
       <header className="border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/60 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
           <h1 className="text-xl font-semibold">
-            <Link href="/" className="hover:text-emerald-400">← Home</Link>
+            <Link href="/" className="hover:text-emerald-400">← Zurück</Link>
           </h1>
         </div>
       </header>

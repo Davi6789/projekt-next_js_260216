@@ -4,7 +4,7 @@
 
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -16,7 +16,7 @@ export default function Header() {
   const [mounted, setMounted] = useState(false);
 
   // Theme hydration fix
-  useEffect(() => {
+  useLayoutEffect(() => {
     setMounted(true);
   }, []);
 
@@ -108,7 +108,13 @@ export default function Header() {
             >
               Tasks
             </Link>
-            <a href="/shop" className="text-sm hover:text-emerald-400">Shop</a>
+            <Link
+              href="/shop"
+              onClick={() => setOpen(false)}
+              className={linkClass("/shop")}
+            >
+              Shop
+            </Link>
 
 
             <button

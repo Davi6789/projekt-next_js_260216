@@ -2,6 +2,7 @@
 
 "use client";
 
+import Link from "next/link";
 import { useState, } from "react";
 
 type Task = {
@@ -49,6 +50,9 @@ export default function Homepage() {
   }
 
   return (
+   
+      
+
   <section className="mx-auto flex max-w-4xl justify-center px-6 py-8 pt-24">
       <div className="w-full max-w-xl p-8 bg-slate-900/50 dark:bg-slate-800/70 
                       border border-slate-800/50 dark:border-slate-700/60 
@@ -172,5 +176,6 @@ export default function Homepage() {
         </ul>
       </div>
     </section>
+ 
   );
 }
