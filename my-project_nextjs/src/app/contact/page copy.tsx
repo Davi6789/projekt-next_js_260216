@@ -39,14 +39,14 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    /* setError(""); */
+    setError("");
 
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY);
       setSuccess(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch {
-      setError("Versand fehlgeschlagen. ");
+      setError("Versand fehlgeschlagen. Bitte versuche es erneut.");
     } finally {
       setLoading(false);
     }
@@ -90,13 +90,13 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="min-h-screen text-slate-900 dark:text-slate-100">
+    <main className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <header className="border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/60 backdrop-blur">
         <div className="w-full flex justify-center py-10">
           <h1 className="text-xl font-semibold text-center">
             <Link
               href="/termin"
-              className="text-xl font-semibold hover:text-emerald-500 transition-colors border-b-2 border-emerald-500 pb-1"
+              className="hover:text-emerald-400 transition-colors"
             >
               Termin buchen
             </Link>

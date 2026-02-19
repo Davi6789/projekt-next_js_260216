@@ -47,11 +47,11 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen px-4 py-8 transition-colors duration-300">
+    <main className="min-h-screen bg-linear-to-br from-gray-950 via-gray-900 to-gray-950 px-4 py-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-950 dark:text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
             Terminbuchung
           </h1>
           <p className="text-gray-400 mt-2 text-sm sm:text-base">
@@ -89,7 +89,7 @@ export default function Home() {
 
         {/* Bestätigung */}
         {confirmation && (
-          <div className="mb-6 p-4 rounded-xl bg-emerald-100 dark:bg-emerald-500/20 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-center text-sm shadow-md">
+          <div className="mb-6 p-4 rounded-xl bg-linear-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 text-green-300 text-center text-sm animate-pulse">
             {confirmation}
           </div>
         )}

@@ -3,7 +3,7 @@
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-12">
-      <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-red-600 to-emerald-500 bg-clip-text text-transparent">
+      <h1 className="text-4xl font-bold mb-2 bg-linear-to-r from-red-600 to-emerald-500 bg-clip-text text-transparent">
         Über dieses Projekt
       </h1>
       <p className="text-slate-500 dark:text-red-200/60 mb-10">DCI Kurs - 4 Tage Intensiv-Projekt</p>
